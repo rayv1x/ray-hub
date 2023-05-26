@@ -1,0 +1,84 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "rays hub", HidePremium = false, IntroText = "Rays Hub!", SaveConfig = true, ConfigFolder = "ray#0007"})
+
+local MainTab = Window:MakeTab({
+    Name = "all scripts",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+OrionLib:MakeNotification({
+    Name = "Credits!",
+    Content = "credits to ray#0007",
+    Image = "rbxassetid://4483345998",
+    Time = 10
+})
+
+MainTab:AddButton({
+    Name = "Swagmode",
+    Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+      end
+})
+
+MainTab:AddButton({
+    Name = "Nukermode",
+    Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
+      end
+})
+
+MainTab:AddButton({
+    Name = "Nyula",
+    Callback = function()
+   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/nyulachan/nyula/main/nyuladhm"))()
+      end
+})
+
+MainTab:AddButton({
+    Name = "Keyboard",
+    Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+      end
+})
+
+MainTab:AddButton({
+    Name = "Synapse",
+    Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/GSdQw33E"))()
+      end
+})
+
+MainTab:AddButton({
+    Name = "Antilock",
+    Callback = function()
+   loadstring(game:HttpGet("http://kirbsware.xyz/Mobile.txt"))()
+      end
+})
+
+MainTab:AddButton({
+    Name = "Aimlock",
+    Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+      end
+})
+
+
+Tab:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(0, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+
+
+
+
+
+
+
+OrionLob:Init()
