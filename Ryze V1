@@ -161,9 +161,9 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 function SendNotification(text)
     Notification:Notify(
-        {Title = "ryze V1", Description = "By Ray - "..text},
-        {OutlineColor = Color3.fromRGB(255,0,0),Time = 3, Type = "image"},
-        {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255,0,0)}
+        {Title = "Ryze V1", Description = "By Ray - "..text},
+        {OutlineColor = Color3.fromRGB(255,165,0),Time = 3, Type = "image"},
+        {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255,165,0)}
     )
 end
 function calculateVelocity(initialPos, finalPos, timeInterval)
@@ -839,8 +839,8 @@ end))
         updateKey('namecallInstance')
     end
 do
-	local Window = library:AddWindow("Imperial V3", {
-		main_color = Color3.fromRGB(69,0,0),
+	local Window = library:AddWindow("Ryze V1", {
+		main_color = Color3.fromRGB(255,165,0),
 		min_size = Vector2.new(500, 600),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
@@ -1061,7 +1061,7 @@ ToggleButton.BackgroundTransparency = 0.5
 ToggleButton.BorderSizePixel = 0
 ToggleButton.Position = UDim2.new(1, -120, 0, 35) -- Adjusted the position to top right corner
 ToggleButton.Size = UDim2.new(0, 100, 0, 18)
-ToggleButton.BackgroundColor3 = Color3.fromRGB(69,0,0)
+ToggleButton.BackgroundColor3 = Color3.fromRGB(255,165,0)
 ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = ToggleButton
@@ -1097,9 +1097,9 @@ ScreenGui.ResetOnSpawn = false -- Keep the GUI after respawn
 ScreenGui.Parent = PlayerGui
 
 local TextButton = Instance.new("TextButton")
-TextButton.Name = "Imperial"
+TextButton.Name = "Ryze"
 TextButton.Parent = ScreenGui
-TextButton.BackgroundColor3 = Color3.fromRGB(69,0,0)
+TextButton.BackgroundColor3 = Color3.fromRGB(255,165,0)
 TextButton.BackgroundTransparency = 0.5
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(1, -120, 0, 10) -- Adjusted the position to top right corner
