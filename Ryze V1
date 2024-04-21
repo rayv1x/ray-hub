@@ -38,7 +38,7 @@ getgenv().Settings = {
              ["Enabled"] = true,
              ["Hitchams"] = {
                   ["Enabled"] = false,
-                  ["Color"] = Color3.fromRGB(115,0,0),
+                  ["Color"] = Color3.fromRGB(255,165,0),
                   ["Transparency"] = 0,
                   ["Material"] = "ForceField",
              },
@@ -407,7 +407,7 @@ Top.BorderSizePixel = 0
 Top.Position = UDim2.new(0, 0, -0.101449274, 0)
 Top.Size = UDim2.new(0, 358, 0, 7)
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(115,0,0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(155,40,0))}
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255,165,0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(250,165,0))}
 UIGradient.Rotation = 90
 UIGradient.Parent = Top
 
@@ -520,7 +520,7 @@ end
 
 LocalHL.Parent = Plr.Character
 LocalHL.FillTransparency = 0.2
-LocalHL.FillColor = Color3.fromRGB(115,0,0)
+LocalHL.FillColor = Color3.fromRGB(255,165,0)
 LocalHL.OutlineColor = Color3.fromRGB(255,255,255)
 
         else
