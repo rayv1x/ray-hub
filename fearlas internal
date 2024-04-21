@@ -88,7 +88,7 @@ getgenv().Settings = {
 		["Filled"] = false,
 		["Thickness"] = 0.66,
 		["Transparency"] = 0.9,
-		["Color"] = Color3.fromRGB(255,255,255),
+		["Color"] = Color3.fromRGB(255,0,0),
 	},
 	["Misc"] = {
 	    ["NoDelay"] = false,
@@ -104,7 +104,7 @@ getgenv().Settings = {
 	   },
 	},
 	["Checks"] = { --entirely not
-	    ["UnlovkOnKO"] = false,
+	    ["UnlovkOnKO"] = true,
 	    ["TrashTalkOnKO"] = false,
 	},
 	["Resolution"] = {
@@ -161,9 +161,9 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 function SendNotification(text)
     Notification:Notify(
-        {Title = "Imperial V3", Description = "By Las (Lion) - "..text},
-        {OutlineColor = Color3.fromRGB(115,0,0),Time = 3, Type = "image"},
-        {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(115,0,0)}
+        {Title = "ryze V1", Description = "By Ray - "..text},
+        {OutlineColor = Color3.fromRGB(255,0,0),Time = 3, Type = "image"},
+        {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255,0,0)}
     )
 end
 function calculateVelocity(initialPos, finalPos, timeInterval)
@@ -258,12 +258,12 @@ function calculateVelocity(initialPos, finalPos, timeInterval)
         end
         placemarker.Transparency = 0.75
         if getgenv().Settings.FearLas.DOT then
-        makemarker(placemarker, placemarker, Color3.fromRGB(115,0,0), 1, 0)
+        makemarker(placemarker, placemarker, Color3.fromRGB(255,0,0), 1, 0)
         end
     end)
  local Tool = Instance.new("Tool")
 Tool.RequiresHandle = false
-Tool.Name = "Lock Tool"
+Tool.Name = "ryze"
 Tool.Parent = game.Players.LocalPlayer.Backpack
 local player = game.Players.LocalPlayer
 local function connectCharacterAdded()
