@@ -258,7 +258,7 @@ function calculateVelocity(initialPos, finalPos, timeInterval)
         end
         placemarker.Transparency = 0.75
         if getgenv().Settings.FearLas.DOT then
-        makemarker(placemarker, placemarker, Color3.fromRGB(255,0,0), 1, 0)
+        makemarker(placemarker, placemarker, Color3.fromRGB(255,165,0), 1, 0)
         end
     end)
  local Tool = Instance.new("Tool")
